@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app-wrp {
+  /*   display: flex;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+}
+.app {
+  background-image: url("./images/sunny-weather.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.app-sunny {
+  background-image: url("./images/sunny-weather.jpg");
+}
+.app-rainy {
+  background-image: url("./images/rainy-weather.jpg");
+}

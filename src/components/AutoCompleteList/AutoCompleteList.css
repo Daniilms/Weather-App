@@ -1,0 +1,6 @@
+.auto-complete-list {
+  display: none;
+}
+.auto-complete-list--active {
+  display: block;
+}
