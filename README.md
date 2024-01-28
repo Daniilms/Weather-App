@@ -28,4 +28,5 @@ You should start to write something in the input and then choose city from the s
 - CSS3
 - Tailwind
 - React
+- Vite
 - Redux
