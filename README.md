@@ -2,7 +2,7 @@
 
 ## About
 
-This is Weather App. You can choose city and check for current temperature in there.
+This is a Weather App. You can choose city and check for current temperature in there.
 
 ## Current status
 
