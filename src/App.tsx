@@ -8,6 +8,7 @@ import { store } from "./store/store";
 import { fetchWeaherData } from "./store/actions";
 import { ShowTemperature } from "./components/ShowTemperature/ShowTemperature";
 import { State } from "./const/const";
+
 import axios from "axios";
 
 function App() {
@@ -18,7 +19,6 @@ function App() {
   if (currentWeather.weather !== undefined) {
     weatherType = currentWeather.weather[0].main;
   }
-  /* const axios = require("axios"); */
 
   async function getWeather() {
     if (
@@ -26,7 +26,9 @@ function App() {
       currentLocation.inputStatus === "done"
     ) {
       try {
-        const URL = `https://api.openweathermap.org/data/2.5/weather?q=${currentLocation.cityName}&APPID=600f67475aec9e21a6fedc28068caf39`;
+        const URL = `https://api.openweathermap.org/data/2.5/weather?q=${
+          currentLocation.cityName
+        }&APPID=${import.meta.env.VITE_API_KEY}`;
         const data1 = await fetch(URL);
         const { status, data } = await axios.get(URL);
         console.log(data);
